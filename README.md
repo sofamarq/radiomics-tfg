@@ -9,7 +9,7 @@ Código y resultados que evalúan si las características radiómicas de la reso
 
 ## Desenlace, variable objetivo y cohorte
 
-- **Desenlace:** respuesta completa o casi completa a la quimioterapia neoadyuvante.
+- **Desenlace (Target):** respuesta completa o casi completa a la quimioterapia neoadyuvante.
 - **Variable objetivo:** binarización de *Overall Near-complete Response: Stricter Definition* de la colección Duke. Clase 1 = código 1 (respuesta completa) o código 2 (respuesta casi completa); clase 0 = código 0; el código 3 (sin evaluación anatomopatológica) se excluye. La clase 1 no equivale a respuesta patológica completa.
 - **Cohorte:** 922 pacientes → 312 con tratamiento neoadyuvante → 292 con quimioterapia neoadyuvante → **281** con desenlace evaluable (93 de clase 1 y 188 de clase 0).
 - **Bloques de información:** C (clínico-patológico basal, 14 variables), A (adquisición de la RM, 14 variables) y R (509 características radiómicas tras eliminar 20 columnas duplicadas). Modelos principales: C, C+R y C+A+R.
