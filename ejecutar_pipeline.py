@@ -5,6 +5,7 @@ Uso (desde la raíz del repositorio):
     python ejecutar_pipeline.py --solo-figuras       # solo figuras y tablas, a partir de los resultados guardados
     python ejecutar_pipeline.py --desde etapa3       # retoma desde una etapa
     python ejecutar_pipeline.py --notebook           # además, ejecuta notebook/TFG_Radiomics_Final.ipynb
+    python ejecutar_pipeline.py --solo-figuras --eda # figuras y tablas + notebook/TFG_Radiomics_EDA.ipynb
 
 Las etapas no modifican métodos ni parámetros: cada una es un script del proyecto que se ejecuta tal cual.
 """
@@ -44,14 +45,14 @@ def ejecutar(nombre, script, cwd, desc):
     print(f"=== [{nombre}] listo en {(time.time() - t0) / 60:.1f} min", flush=True)
 
 
-def ejecutar_notebook():
+def ejecutar_notebook(nombre="TFG_Radiomics_Final.ipynb"):
     import nbformat
     from nbclient import NotebookClient
-    ruta = RAIZ / "notebook" / "TFG_Radiomics_Final.ipynb"
+    ruta = RAIZ / "notebook" / nombre
     nb = nbformat.read(ruta, as_version=4)
     NotebookClient(nb, timeout=3600, kernel_name="python3", resources={"metadata": {"path": str(RAIZ)}}).execute()
     nbformat.write(nb, ruta)
-    print("=== [notebook] ejecutado y guardado con sus salidas", flush=True)
+    print(f"=== [notebook] {nombre} ejecutado y guardado con sus salidas", flush=True)
 
 
 def main():
@@ -60,6 +61,7 @@ def main():
     ap.add_argument("--desde", choices=nombres, help="etapa desde la cual retomar")
     ap.add_argument("--solo-figuras", action="store_true", help="solo figuras y tablas, desde los resultados guardados")
     ap.add_argument("--notebook", action="store_true", help="ejecutar también el notebook consolidado")
+    ap.add_argument("--eda", action="store_true", help="ejecutar también el notebook de análisis exploratorio")
     a = ap.parse_args()
     inicio = "figuras_tablas" if a.solo_figuras else (a.desde or nombres[0])
     t0 = time.time()
@@ -67,6 +69,8 @@ def main():
         ejecutar(*e)
     if a.notebook:
         ejecutar_notebook()
+    if a.eda:
+        ejecutar_notebook("TFG_Radiomics_EDA.ipynb")
     print(f"\nPipeline completo en {(time.time() - t0) / 60:.1f} min")
 
 

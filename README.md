@@ -28,6 +28,7 @@ Colección *Duke-Breast-Cancer-MRI* de The Cancer Imaging Archive (TCIA). Los do
 ├── analisis_complementarios/     cohorte descriptiva, PCA descriptivo, PCA exploratorio 5×3, subgrupos
 │   └── resultados/
 ├── notebook/                     TFG_Radiomics_Final.ipynb (alternativa de ejecución del análisis principal)
+│                                 TFG_Radiomics_EDA.ipynb (análisis exploratorio de los datos)
 └── elementos_visuales_finales/
     ├── figuras/                  figuras finales (PNG, 300 ppp)
     ├── tablas/  anexos/          tablas finales (CSV)
@@ -75,6 +76,10 @@ Por defecto las figuras se guardan en PNG y las tablas en CSV. Los formatos adic
 ### Notebook
 
 `notebook/TFG_Radiomics_Final.ipynb` es una **alternativa de ejecución** del análisis principal, mencionada en la tesis: reproduce de forma autocontenida, desde los dos Excel, la cohorte, el preprocesamiento, el hold-out, la CV anidada repetida 10×5×5, el bootstrap, la calibración y Random Forest / Gradient Boosting, y compara su resultado con `pipeline_v2/stage3_*.csv`. No incluye los análisis complementarios ni genera las figuras y tablas finales. Se incluye con sus salidas; no es necesario ejecutarlo además de `ejecutar_pipeline.py`. Para reejecutarlo: `python ejecutar_pipeline.py --solo-figuras --notebook` (≈ 7 min).
+
+### Análisis exploratorio
+
+`notebook/TFG_Radiomics_EDA.ipynb` es complementario y descriptivo; no es necesario ejecutarlo para correr el pipeline principal. Usa las funciones del pipeline (`pipeline_v2/run_stage2.py`) para la lectura de los Excel, la selección de pacientes y los bloques, por lo que sus cifras coinciden con las del análisis principal. Contiene: estructura de los archivos y armonización de encabezados; integración y controles de calidad; selección de la cohorte y distribución de la variable objetivo; caracterización clínica; datos faltantes, códigos especiales y su tratamiento; reconstrucciones y uso de las columnas clínicas; y caracterización descriptiva del bloque radiómico (duplicados, faltantes y correlaciones). No entrena modelos. Se incluye ejecutado, con sus tablas y gráficos; para reejecutarlo (junto con las figuras y tablas, < 2 min): `python ejecutar_pipeline.py --solo-figuras --eda`. Si se abre en Jupyter, el directorio de trabajo debe ser la raíz del repositorio.
 
 ## Salidas: figuras y tablas de la tesis
 
