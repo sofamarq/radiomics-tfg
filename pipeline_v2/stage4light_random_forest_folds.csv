@@ -1,0 +1,11 @@
+algorithm,model,outer_fold,roc_auc,pr_auc
+random_forest,C,0,0.8601,0.666
+random_forest,C,1,0.6067,0.4
+random_forest,C,2,0.7895,0.5874
+random_forest,C,3,0.7354,0.6667
+random_forest,C,4,0.7055,0.5497
+random_forest,C+A+R,0,0.8573,0.7724
+random_forest,C+A+R,1,0.6184,0.4538
+random_forest,C+A+R,2,0.7266,0.5761
+random_forest,C+A+R,3,0.7553,0.646
+random_forest,C+A+R,4,0.643,0.548

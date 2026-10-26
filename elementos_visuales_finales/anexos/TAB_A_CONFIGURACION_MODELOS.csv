@@ -1,0 +1,5 @@
+Algoritmo o procedimiento,Hiperparámetros evaluados,Esquema de validación y semillas
+"Regresión logística (L2, ponderación balanceada, máx. 5000 iteraciones)","Parámetro de regularización: 0,01; 0,1; 1; 10. Componentes de R: 1, 2, 3, 5, 10, 15, 20 o 30",Combinaciones de bloques: CV anidada única 5 × 5 (semilla 42). Modelos principales: CV anidada repetida 10 × 5 × 5 (semillas 42 a 51). Hold-out 80/20 estratificado (semilla 42; CV interna de 5 particiones)
+Random Forest (400 árboles),"Profundidad máxima: sin límite, 3, 5. Mínimo de observaciones por hoja: 2, 5, 10. Variables por división: raíz cuadrada, 50 %. Ponderación de clases: ninguna, balanceada. Componentes de R: 1, 2, 3, 5, 10, 15, 20 o 30",CV anidada única 5 × 3 (semilla 42)
+Gradient Boosting,"Número de árboles: 100, 200. Tasa de aprendizaje: 0,05; 0,1. Profundidad máxima: 2, 3. Mínimo de observaciones por hoja: 10 (fijo). Componentes de R: 1, 2, 3, 5, 10, 15, 20 o 30",CV anidada única 5 × 3 (semilla 42)
+Comparación pareada,Bootstrap de las diferencias frente a C: 5000 remuestreos; IC 95 % por percentiles,Semilla 20260909

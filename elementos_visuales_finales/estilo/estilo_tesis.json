@@ -1,0 +1,82 @@
+{
+  "_descripcion": "Identidad visual definitiva de la tesis (figuras, diagramas y tablas). Fuente única: leer con estilo_tesis.py o json.load.",
+  "_version": "1.0 · 2026-10-24 · paleta 5 (azul cielo, rosa coral, verde petróleo)",
+
+  "tipografia": {
+    "familia": "Source Sans 3",
+    "familia_respaldo": ["Source Sans Pro", "Helvetica Neue", "Arial", "DejaVu Sans"],
+    "numeros_tabulares": true,
+    "nota": "Source Sans 3 solo en figuras, diagramas y tablas; independiente de la tipografía del documento.",
+    "tamanos": {
+      "_unidad": "unidades SVG de la muestra (panel de 310 u = 7,7 cm; figura completa de 768 u = 16 cm)",
+      "valores_ejes": 10, "titulos_ejes": 11, "leyendas": 10, "anotaciones": 9.5,
+      "letra_panel": 12, "pipeline_titulos": 12, "pipeline_secundario": 10, "tabla": 12.5, "nota_tabla": 11
+    },
+    "tamanos_pt_matplotlib": {
+      "_nota": "Equivalente impreso para figuras de 7,7 cm por panel (factor ≈ 0,70 pt/u).",
+      "valores_ejes": 7.0, "titulos_ejes": 7.7, "leyendas": 7.0, "anotaciones": 6.7, "letra_panel": 8.5
+    },
+    "pesos": {"normal": 400, "medio": 500, "seminegrita": 600, "negrita": 700}
+  },
+
+  "formato_numerico": {"separador_decimal": ",", "decimales_metricas": 3, "signo_menos": "−", "porcentaje": "13,9 %", "intervalo": "[−0,024; 0,048]"},
+
+  "modelos": {
+    "C":     {"color": "#68B5E2", "nombre_color": "azul cielo",     "tinte": "#E3F1FA", "ancho_linea": 1.6, "estilo_linea": "continua",    "dasharray": "",          "mpl_linestyle": "solid",             "marcador": "o", "rol": "referencia (clínico)"},
+    "C+R":   {"color": "#EB8A99", "nombre_color": "rosa coral",     "tinte": "#FBE8EB", "ancho_linea": 1.6, "estilo_linea": "continua",    "dasharray": "",          "mpl_linestyle": "solid",             "marcador": "s", "rol": "clínico + radiómica"},
+    "C+A+R": {"color": "#0A7E83", "nombre_color": "verde petróleo", "tinte": "#E2F0F0", "ancho_linea": 2.2, "estilo_linea": "continua",    "dasharray": "",          "mpl_linestyle": "solid",            "marcador": "D", "rol": "modelo completo (destacado sutil)"}
+  },
+  "orden_modelos": ["C", "C+R", "C+A+R"],
+
+  "tinta": {"primaria": "#1F2733", "secundaria": "#545F6E", "atenuada": "#8A94A3", "eje": "#9AA3AF", "grilla": "#E7EAEE", "referencia": "#B4BBC5"},
+  "superficies": {"fondo": "#FFFFFF", "panel_claro": "#F6F8FA", "acento_suave": "#E2F0F0", "borde_suave": "#D3DEE2", "borde_acento": "#0A7E83"},
+
+  "complementarios": {
+    "_nota": "Colores para elementos que no representan modelos. No reutilizar los colores de modelo con otro significado.",
+    "secuencial_petroleo": ["#EEF6F6", "#C7E3E4", "#93C8CA", "#56A6AA", "#0A7E83", "#075B5F"],
+    "divergente": {"negativo": "#6B5CA5", "centro": "#F1F2F4", "positivo": "#B5546A", "_uso": "coeficientes o diferencias con signo; centro gris neutro"},
+    "clases": {"negativa": "#A7B0BC", "positiva": "#3E4A5C", "_uso": "distribuciones por clase de respuesta (0/1) sin color de modelo"},
+    "diagrama": {"entrenamiento": "#EEF1F4", "validacion_interna": "#C7E3E4", "prueba_externa": "#0A7E83", "flecha": "#8A94A3"}
+  },
+
+  "ejes": {"color": "#9AA3AF", "ancho": 0.9, "solo_izquierdo_inferior": true, "marcas_largo": 0, "relacion_aspecto_roc_pr": 1},
+  "grilla": {"color": "#E7EAEE", "ancho": 0.6, "estilo": "continua", "detras_de_datos": true},
+  "leyenda": {"fondo": "#FFFFFF", "opacidad_fondo": 0.92, "borde": "#E7EAEE", "ancho_borde": 0.6, "radio": 3, "largo_muestra": 22, "posicion": "zona vacía del gráfico", "c_a_r_seminegrita": true},
+  "lineas_referencia": {"color": "#B4BBC5", "ancho": 1.0, "dasharray": "1.5 2.5", "mpl_linestyle": [0, [1.5, 2.5]], "_uso": "azar (ROC), prevalencia (PR), umbrales"},
+  "marcadores": {"radio": 3.4, "borde_blanco": 1.0, "media": "trazo vertical de 2 u en tinta primaria"},
+
+  "tablas": {
+    "estilo": "tres líneas (booktabs), sin bordes verticales",
+    "filete_superior_inferior": 1.4, "filete_encabezado": 0.8, "separador_filas": {"color": "#E7EAEE", "ancho": 0.6},
+    "fondo": "#FFFFFF", "sombreado": "ninguno (tampoco en encabezado ni filas destacadas)", "fila_destacada": null, "numeros": "alineados a la derecha, cifras tabulares, coma decimal y mismo número de decimales por columna",
+    "epigrafe": "arriba", "nota": "debajo, 11 u, tinta secundaria"
+  },
+
+  "diagramas": {
+    "caja": {"fondo": "#F6F8FA", "borde": "#D3DEE2", "ancho_borde": 0.9, "radio": 7},
+    "caja_acento": {"fondo": "#E2F0F0", "borde": "#0A7E83", "ancho_borde": 1.2},
+    "iconos": {"trazo": 1.4, "color": "#545F6E", "color_acento": "#0A7E83"},
+    "flechas": {"color": "#8A94A3", "ancho": 1.3}
+  },
+
+  "dimensiones_A4_cm": {"ancho_texto": 16.0, "figura_completa": [16.0, 7.6], "panel": [7.7, 7.7], "dpi_exportacion": 300, "formatos": ["pdf", "svg", "png"]},
+
+  "convenciones": [
+    "ROC y PR con escalas completas [0; 1] y relación de aspecto 1:1; ROC-AUC por repetición en [0,5; 1,0] y AP en [0; 1].",
+    "Todas las curvas de modelo en línea continua; la identidad la da el color y C+A+R se destaca con una línea más gruesa (2,2 frente a 1,6).",
+    "Referencias (azar, prevalencia) en gris punteado fino, distinto de los estilos de modelo.",
+    "Leyenda siempre presente; métrica entre paréntesis con coma decimal; textos en tinta, nunca en el color del modelo.",
+    "Sin títulos dentro del área de la figura. Número y epígrafe definitivos se incorporarán en los archivos gráficos solo después de aprobar el inventario maestro. Las letras A y B identifican paneles.",
+    "Tablas de fondo blanco, sin sombreado y con filetes horizontales discretos; epígrafe arriba en tablas y abajo en figuras.",
+    "El petróleo es también el acento de los diagramas (etapa de modelado, pliegue de prueba); los otros colores de modelo no se usan en diagramas."
+  ],
+
+  "identificadores": {
+    "_nota": "Identificadores internos estables; sin numeración definitiva hasta cerrar el inventario maestro.",
+    "FIG_PIPELINE_RADIOMICA": "Flujo de trabajo radiómico",
+    "FIG_CV_ANIDADA": "Validación cruzada anidada repetida 10×5×5",
+    "FIG_ROC_PR_MODELOS": "Curvas ROC y PR de C, C+R y C+A+R",
+    "FIG_METRICAS_REPETICION": "ROC-AUC y AP por repetición",
+    "TAB_DESEMPENO_MODELOS": "ROC-AUC y AP de los modelos principales"
+  }
+}

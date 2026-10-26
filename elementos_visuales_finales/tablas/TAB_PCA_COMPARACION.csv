@@ -1,0 +1,6 @@
+Configuración del PCA,Componentes,ROC-AUC,AP
+Selección en la validación interna,1 a 3,"0,775","0,587"
+2 componentes fijos,2,"0,775","0,583"
+3 componentes fijos,3,"0,775","0,576"
+19 componentes fijos (≥ 70 % de varianza),19,"0,717","0,524"
+30 componentes fijos (≥ 80 % de varianza),30,"0,708","0,524"

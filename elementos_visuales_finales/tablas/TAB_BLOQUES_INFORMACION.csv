@@ -1,0 +1,5 @@
+Bloque,Contenido,Variables,Uso en el análisis
+C · Clínico y anatomopatológico,"Edad, raza, estado menopáusico, RE, RP, HER2, estadio T, estadio N, tipo histológico, bilateralidad, lateralidad y grado histológico (formación tubular, pleomorfismo nuclear y recuento mitótico)",14,Modelo de referencia; incluido en todos los modelos
+M · Hallazgos cualitativos de RM,"Enfermedad multifocal o multicéntrica, hallazgos contralaterales, linfadenopatías, compromiso de piel o pezón y compromiso del músculo pectoral o de la pared torácica",5,Solo en la evaluación inicial de combinaciones
+A · Contexto técnico de adquisición,"Fabricante, modelo del equipo, intensidad de campo, TR, TE, ángulo de inclinación, espesor de corte, filas de la matriz, matriz de adquisición, campo de visión, opciones de adquisición, agente de contraste, posición de la paciente y días entre el diagnóstico y la RM",14,Contexto técnico de R en C+A+R
+R · Radiómico,Características cuantitativas de DCE-MRI preextraídas por Duke (tumor y tejido mamario),529 → 509,"C+R y C+A+R, tras filtrado de correlación y PCA"

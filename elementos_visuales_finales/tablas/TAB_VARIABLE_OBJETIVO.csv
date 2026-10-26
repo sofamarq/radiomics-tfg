@@ -1,0 +1,6 @@
+Código,Categoría en Duke,Significado,Pacientes (n = 292),Variable objetivo
+0,Not complete or near-complete response,Respuesta no completa ni casi completa,188,Clase 0
+1,Complete response,Respuesta completa,64,Clase 1
+2,Near-complete response,Respuesta casi completa,29,Clase 1
+3,Not available,Evaluación anatomopatológica no disponible,11,Excluida
+NA,Not applicable,No aplica,0,—

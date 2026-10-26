@@ -1,0 +1,11 @@
+algorithm,model,outer_fold,roc_auc,pr_auc
+gradient_boosting,C,0,0.8102,0.6572
+gradient_boosting,C,1,0.6082,0.4017
+gradient_boosting,C,2,0.7325,0.5106
+gradient_boosting,C,3,0.7952,0.6926
+gradient_boosting,C,4,0.67,0.5509
+gradient_boosting,C+A+R,0,0.8116,0.6529
+gradient_boosting,C+A+R,1,0.6711,0.4526
+gradient_boosting,C+A+R,2,0.8012,0.6391
+gradient_boosting,C+A+R,3,0.8165,0.7411
+gradient_boosting,C+A+R,4,0.7141,0.5584

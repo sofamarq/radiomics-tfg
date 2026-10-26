@@ -1,0 +1,160 @@
+{
+  "algorithm": "gradient_boosting",
+  "models": {
+    "C": {
+      "fold_roc": [
+        0.8102,
+        0.6082,
+        0.7325,
+        0.7952,
+        0.67
+      ],
+      "fold_pr": [
+        0.6572,
+        0.4017,
+        0.5106,
+        0.6926,
+        0.5509
+      ],
+      "roc_mean": 0.7232083884438454,
+      "roc_sd": 0.08500254139513809,
+      "pr_mean": 0.5626108463969582,
+      "pr_sd": 0.1168088817209063,
+      "roc_oof": 0.7137382749942804,
+      "pr_oof": 0.5119702051316455,
+      "chosen_params": [
+        {
+          "fold": 0,
+          "learning_rate": 0.05,
+          "max_depth": 2,
+          "min_samples_leaf": 10,
+          "n_estimators": 100,
+          "n_components": null
+        },
+        {
+          "fold": 1,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_samples_leaf": 10,
+          "n_estimators": 100,
+          "n_components": null
+        },
+        {
+          "fold": 2,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_samples_leaf": 10,
+          "n_estimators": 200,
+          "n_components": null
+        },
+        {
+          "fold": 3,
+          "learning_rate": 0.1,
+          "max_depth": 2,
+          "min_samples_leaf": 10,
+          "n_estimators": 100,
+          "n_components": null
+        },
+        {
+          "fold": 4,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_samples_leaf": 10,
+          "n_estimators": 100,
+          "n_components": null
+        }
+      ]
+    },
+    "C+A+R": {
+      "fold_roc": [
+        0.8116,
+        0.6711,
+        0.8012,
+        0.8165,
+        0.7141
+      ],
+      "fold_pr": [
+        0.6529,
+        0.4526,
+        0.6391,
+        0.7411,
+        0.5584
+      ],
+      "roc_mean": 0.7628879572092868,
+      "roc_sd": 0.06620370251800373,
+      "pr_mean": 0.6088341091255489,
+      "pr_sd": 0.10875767910924347,
+      "roc_oof": 0.7475406085563945,
+      "pr_oof": 0.5576544561899943,
+      "chosen_params": [
+        {
+          "fold": 0,
+          "learning_rate": 0.1,
+          "max_depth": 3,
+          "min_samples_leaf": 10,
+          "n_estimators": 200,
+          "n_components": 1,
+          "n_radiomics_after_corr": 296
+        },
+        {
+          "fold": 1,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_samples_leaf": 10,
+          "n_estimators": 200,
+          "n_components": 5,
+          "n_radiomics_after_corr": 304
+        },
+        {
+          "fold": 2,
+          "learning_rate": 0.1,
+          "max_depth": 2,
+          "min_samples_leaf": 10,
+          "n_estimators": 100,
+          "n_components": 1,
+          "n_radiomics_after_corr": 295
+        },
+        {
+          "fold": 3,
+          "learning_rate": 0.05,
+          "max_depth": 2,
+          "min_samples_leaf": 10,
+          "n_estimators": 100,
+          "n_components": 3,
+          "n_radiomics_after_corr": 300
+        },
+        {
+          "fold": 4,
+          "learning_rate": 0.05,
+          "max_depth": 3,
+          "min_samples_leaf": 10,
+          "n_estimators": 100,
+          "n_components": 2,
+          "n_radiomics_after_corr": 298
+        }
+      ]
+    }
+  },
+  "delta": {
+    "roc_fold": [
+      0.0014,
+      0.0629,
+      0.0687,
+      0.0213,
+      0.0441
+    ],
+    "pr_fold": [
+      -0.0043,
+      0.0509,
+      0.1285,
+      0.0485,
+      0.0075
+    ],
+    "roc_mean": 0.03967999999999998,
+    "roc_sd": 0.028302155394951838,
+    "pr_mean": 0.046220000000000004,
+    "pr_sd": 0.05207832562592614,
+    "roc_oof": 0.03380233356211404,
+    "pr_oof": 0.045684251058348835
+  }
+}

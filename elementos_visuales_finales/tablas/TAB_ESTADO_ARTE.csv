@@ -1,0 +1,6 @@
+Estudio,Población,Desenlace,Predictores,Validación,ROC-AUC informado
+Cain et al. (2019),Duke; 288 con tratamiento neoadyuvante (64 con pCR),pCR,529 características de DCE-MRI de Duke; sin variables clínicas,Conjunto de prueba independiente (división 50/50),"Neoadyuvancia: 0,658; quimioterapia: 0,589; TN/HER2+: 0,707"
+You et al. (2024),Duke; 217 con quimioterapia neoadyuvante (cohorte de un estudio multicéntrico),pCR,Puntaje radiómico de DCE-MRI y variables clínicas,No detallada para esta cohorte,"Radiómico: 0,59; clínico: 0,68; combinado: 0,72"
+Li et al. (2024),Duke; 281 con tratamiento neoadyuvante,pCR,Características extraídas de T1 precontraste y primera fase poscontraste,Sobremuestreo SMOTE previo a la división 7:3,"LightGBM: 0,823"
+Granzier et al. (2019),Revisión sistemática; 16 estudios (35 a 414 pacientes),Respuesta a la terapia sistémica neoadyuvante,Radiómica de RM,Variable entre estudios,"Sin estimación agrupada; RQS de 0 % a 41,2 %"
+Kuntjoro et al. (2026),Metaanálisis; 11 estudios,pCR,"Radiómica, clínica y combinación",Agregación por efectos aleatorios,"Agrupado: clínico 0,71; radiómico 0,76; combinado 0,81 (I² = 79 %)"

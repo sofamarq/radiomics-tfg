@@ -1,0 +1,404 @@
+{
+  "meta": {
+    "n": 281,
+    "n_pos": 93,
+    "n_neg": 188,
+    "radiomics_raw": 529,
+    "radiomics_dupes_removed": 20,
+    "radiomics_after_dedup": 509
+  },
+  "summary": {
+    "C": {
+      "roc_auc_oof": 0.7571493937314115,
+      "pr_auc_oof": 0.5482443449453205,
+      "roc_outer_mean": 0.7507574056050511,
+      "roc_outer_sd": 0.06916445410538834,
+      "pr_outer_mean": 0.5577403776162073,
+      "pr_outer_sd": 0.08668501255741078,
+      "fold_roc": [
+        0.838,
+        0.6389,
+        0.7734,
+        0.7112,
+        0.7923
+      ],
+      "fold_pr": [
+        0.6097,
+        0.4072,
+        0.5408,
+        0.5643,
+        0.6667
+      ],
+      "chosen_params": [
+        {
+          "fold": 0,
+          "C": 1.0,
+          "n_components": null
+        },
+        {
+          "fold": 1,
+          "C": 0.1,
+          "n_components": null
+        },
+        {
+          "fold": 2,
+          "C": 0.1,
+          "n_components": null
+        },
+        {
+          "fold": 3,
+          "C": 0.1,
+          "n_components": null
+        },
+        {
+          "fold": 4,
+          "C": 1.0,
+          "n_components": null
+        }
+      ]
+    },
+    "C+M": {
+      "roc_auc_oof": 0.7444520704644246,
+      "pr_auc_oof": 0.5555092823621252,
+      "roc_outer_mean": 0.746194671125419,
+      "roc_outer_sd": 0.06555354605353458,
+      "pr_outer_mean": 0.5639590168719645,
+      "pr_outer_sd": 0.09766670805218301,
+      "fold_roc": [
+        0.8283,
+        0.6389,
+        0.7617,
+        0.7127,
+        0.7895
+      ],
+      "fold_pr": [
+        0.6149,
+        0.4045,
+        0.5311,
+        0.5689,
+        0.7002
+      ],
+      "chosen_params": [
+        {
+          "fold": 0,
+          "C": 0.1,
+          "n_components": null
+        },
+        {
+          "fold": 1,
+          "C": 0.1,
+          "n_components": null
+        },
+        {
+          "fold": 2,
+          "C": 0.1,
+          "n_components": null
+        },
+        {
+          "fold": 3,
+          "C": 0.1,
+          "n_components": null
+        },
+        {
+          "fold": 4,
+          "C": 1.0,
+          "n_components": null
+        }
+      ]
+    },
+    "C+A": {
+      "roc_auc_oof": 0.7465682910089224,
+      "pr_auc_oof": 0.5298307750120173,
+      "roc_outer_mean": 0.7432170397544359,
+      "roc_outer_sd": 0.05960337958264629,
+      "pr_outer_mean": 0.5595094266014548,
+      "pr_outer_sd": 0.09127515573227345,
+      "fold_roc": [
+        0.8338,
+        0.6696,
+        0.712,
+        0.7112,
+        0.7895
+      ],
+      "fold_pr": [
+        0.6533,
+        0.4266,
+        0.4743,
+        0.6114,
+        0.632
+      ],
+      "chosen_params": [
+        {
+          "fold": 0,
+          "C": 1.0,
+          "n_components": null
+        },
+        {
+          "fold": 1,
+          "C": 0.1,
+          "n_components": null
+        },
+        {
+          "fold": 2,
+          "C": 1.0,
+          "n_components": null
+        },
+        {
+          "fold": 3,
+          "C": 0.1,
+          "n_components": null
+        },
+        {
+          "fold": 4,
+          "C": 0.1,
+          "n_components": null
+        }
+      ]
+    },
+    "R": {
+      "roc_auc_oof": 0.5215625714939374,
+      "pr_auc_oof": 0.34563026625884485,
+      "roc_outer_mean": 0.5238164757555339,
+      "roc_outer_sd": 0.05069061746428478,
+      "pr_outer_mean": 0.38263928619488896,
+      "pr_outer_sd": 0.03743552804715767,
+      "fold_roc": [
+        0.5194,
+        0.5906,
+        0.5716,
+        0.468,
+        0.4694
+      ],
+      "fold_pr": [
+        0.3583,
+        0.3746,
+        0.4391,
+        0.4085,
+        0.3327
+      ],
+      "chosen_params": [
+        {
+          "fold": 0,
+          "C": 0.01,
+          "n_components": 10
+        },
+        {
+          "fold": 1,
+          "C": 0.1,
+          "n_components": 2
+        },
+        {
+          "fold": 2,
+          "C": 0.01,
+          "n_components": 1
+        },
+        {
+          "fold": 3,
+          "C": 0.01,
+          "n_components": 1
+        },
+        {
+          "fold": 4,
+          "C": 10.0,
+          "n_components": 15
+        }
+      ]
+    },
+    "C+R": {
+      "roc_auc_oof": 0.7674445207046442,
+      "pr_auc_oof": 0.5627560815495537,
+      "roc_outer_mean": 0.762266560188998,
+      "roc_outer_sd": 0.06376890701259318,
+      "pr_outer_mean": 0.5791600085194119,
+      "pr_outer_sd": 0.08814200677708811,
+      "fold_roc": [
+        0.8476,
+        0.6711,
+        0.7749,
+        0.7112,
+        0.8065
+      ],
+      "fold_pr": [
+        0.6196,
+        0.4609,
+        0.5624,
+        0.5304,
+        0.7225
+      ],
+      "chosen_params": [
+        {
+          "fold": 0,
+          "C": 1.0,
+          "n_components": 2
+        },
+        {
+          "fold": 1,
+          "C": 1.0,
+          "n_components": 2
+        },
+        {
+          "fold": 2,
+          "C": 1.0,
+          "n_components": 1
+        },
+        {
+          "fold": 3,
+          "C": 0.1,
+          "n_components": 1
+        },
+        {
+          "fold": 4,
+          "C": 1.0,
+          "n_components": 2
+        }
+      ]
+    },
+    "C+M+R": {
+      "roc_auc_oof": 0.7500000000000001,
+      "pr_auc_oof": 0.5329917929587324,
+      "roc_outer_mean": 0.7522705531015779,
+      "roc_outer_sd": 0.06155790239295156,
+      "pr_outer_mean": 0.5781413051526479,
+      "pr_outer_sd": 0.08432109483671187,
+      "fold_roc": [
+        0.8241,
+        0.6564,
+        0.7588,
+        0.7141,
+        0.808
+      ],
+      "fold_pr": [
+        0.6169,
+        0.4651,
+        0.5281,
+        0.5661,
+        0.7146
+      ],
+      "chosen_params": [
+        {
+          "fold": 0,
+          "C": 1.0,
+          "n_components": 2
+        },
+        {
+          "fold": 1,
+          "C": 1.0,
+          "n_components": 2
+        },
+        {
+          "fold": 2,
+          "C": 0.1,
+          "n_components": 1
+        },
+        {
+          "fold": 3,
+          "C": 0.1,
+          "n_components": 1
+        },
+        {
+          "fold": 4,
+          "C": 0.1,
+          "n_components": 2
+        }
+      ]
+    },
+    "C+A+R": {
+      "roc_auc_oof": 0.7617822008693662,
+      "pr_auc_oof": 0.5682427839117481,
+      "roc_outer_mean": 0.7617121276401055,
+      "roc_outer_sd": 0.045751775056280676,
+      "pr_outer_mean": 0.6094259391277566,
+      "pr_outer_sd": 0.11207411732792183,
+      "fold_roc": [
+        0.8435,
+        0.7325,
+        0.712,
+        0.7454,
+        0.7752
+      ],
+      "fold_pr": [
+        0.7608,
+        0.4887,
+        0.4713,
+        0.6484,
+        0.678
+      ],
+      "chosen_params": [
+        {
+          "fold": 0,
+          "C": 1.0,
+          "n_components": 10
+        },
+        {
+          "fold": 1,
+          "C": 1.0,
+          "n_components": 5
+        },
+        {
+          "fold": 2,
+          "C": 1.0,
+          "n_components": 3
+        },
+        {
+          "fold": 3,
+          "C": 0.1,
+          "n_components": 2
+        },
+        {
+          "fold": 4,
+          "C": 1.0,
+          "n_components": 2
+        }
+      ]
+    },
+    "C+M+A+R": {
+      "roc_auc_oof": 0.7402196293754288,
+      "pr_auc_oof": 0.5547745003326607,
+      "roc_outer_mean": 0.7451702394915692,
+      "roc_outer_sd": 0.05580047325822606,
+      "pr_outer_mean": 0.6015572688871351,
+      "pr_outer_sd": 0.10038058946409201,
+      "fold_roc": [
+        0.838,
+        0.6871,
+        0.6915,
+        0.7383,
+        0.771
+      ],
+      "fold_pr": [
+        0.717,
+        0.5059,
+        0.459,
+        0.6577,
+        0.6681
+      ],
+      "chosen_params": [
+        {
+          "fold": 0,
+          "C": 1.0,
+          "n_components": 5
+        },
+        {
+          "fold": 1,
+          "C": 1.0,
+          "n_components": 15
+        },
+        {
+          "fold": 2,
+          "C": 1.0,
+          "n_components": 1
+        },
+        {
+          "fold": 3,
+          "C": 0.1,
+          "n_components": 3
+        },
+        {
+          "fold": 4,
+          "C": 1.0,
+          "n_components": 2
+        }
+      ]
+    }
+  }
+}

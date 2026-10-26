@@ -1,0 +1,639 @@
+{
+  "prevalence": 0.3309608540925267,
+  "n": 281,
+  "n_pos": 93,
+  "discrimination": {
+    "C": {
+      "roc_oof": 0.7498856097002975,
+      "pr_oof": 0.5464093473606282,
+      "roc_holdout": 0.7783933518005539,
+      "pr_holdout": 0.6337716413633134
+    },
+    "C+A+R": {
+      "roc_oof": 0.7610386639212995,
+      "pr_oof": 0.5765857155312633,
+      "roc_holdout": 0.7839335180055402,
+      "pr_holdout": 0.7082692859356297
+    },
+    "delta_oof_roc": 0.01115305422100199,
+    "delta_oof_pr": 0.03017636817063507,
+    "bootstrap": {
+      "delta_roc": 0.0111530542210019,
+      "delta_roc_ci": [
+        -0.0244107139059146,
+        0.0483849509100086
+      ],
+      "delta_pr": 0.030176368170635,
+      "delta_pr_ci": [
+        -0.0326541295306601,
+        0.0937964428861561
+      ]
+    }
+  },
+  "calibration": {
+    "C": {
+      "brier": 0.20248175068190322,
+      "cal_slope": 0.8380039399579214,
+      "cal_intercept": -0.6601187037848822
+    },
+    "C+A+R": {
+      "brier": 0.197763313961903,
+      "cal_slope": 0.7007041630225221,
+      "cal_intercept": -0.6117929419253957
+    }
+  },
+  "classification_050": {
+    "C": {
+      "threshold": 0.5,
+      "TN": 124,
+      "FP": 64,
+      "FN": 30,
+      "TP": 63,
+      "sensitivity": 0.6774193548387096,
+      "specificity": 0.6595744680851063,
+      "PPV": 0.49606299212598426,
+      "NPV": 0.8051948051948052,
+      "accuracy": 0.6654804270462633,
+      "F1": 0.5727272727272728
+    },
+    "C+A+R": {
+      "threshold": 0.5,
+      "TN": 133,
+      "FP": 55,
+      "FN": 30,
+      "TP": 63,
+      "sensitivity": 0.6774193548387096,
+      "specificity": 0.7074468085106383,
+      "PPV": 0.5338983050847458,
+      "NPV": 0.8159509202453987,
+      "accuracy": 0.697508896797153,
+      "F1": 0.5971563981042655
+    }
+  },
+  "classification_alt_descriptive": {
+    "C": {
+      "threshold": 0.3395958365246514,
+      "TN": 93,
+      "FP": 95,
+      "FN": 6,
+      "TP": 87,
+      "sensitivity": 0.9354838709677419,
+      "specificity": 0.4946808510638298,
+      "PPV": 0.47802197802197804,
+      "NPV": 0.9393939393939394,
+      "accuracy": 0.6405693950177936,
+      "F1": 0.6327272727272727
+    },
+    "C+A+R": {
+      "threshold": 0.4812255816984946,
+      "TN": 133,
+      "FP": 55,
+      "FN": 25,
+      "TP": 68,
+      "sensitivity": 0.7311827956989247,
+      "specificity": 0.7074468085106383,
+      "PPV": 0.5528455284552846,
+      "NPV": 0.8417721518987342,
+      "accuracy": 0.7153024911032029,
+      "F1": 0.6296296296296297
+    }
+  },
+  "dca_summary": {
+    "pt_grid": [
+      0.05,
+      0.75
+    ],
+    "frac_pt_car_gt_c": 0.6197183098591549,
+    "frac_pt_c_gt_car": 0.38028169014084506,
+    "car_gt_c_ranges": [
+      [
+        0.07,
+        0.1
+      ],
+      [
+        0.12,
+        0.15
+      ],
+      [
+        0.19,
+        0.19
+      ],
+      [
+        0.39,
+        0.73
+      ]
+    ],
+    "c_gt_car_ranges": [
+      [
+        0.05,
+        0.06
+      ],
+      [
+        0.11,
+        0.11
+      ],
+      [
+        0.16,
+        0.18
+      ],
+      [
+        0.2,
+        0.38
+      ],
+      [
+        0.74,
+        0.75
+      ]
+    ],
+    "car_gt_c_maxgap": 0.05693950177935944,
+    "car_gt_c_maxgap_at_pt": 0.65,
+    "c_gt_car_maxgap": 0.01779359430604982,
+    "c_gt_car_maxgap_at_pt": 0.75,
+    "car_useful_range": [
+      0.06,
+      0.55
+    ],
+    "c_useful_range": [
+      0.05,
+      0.49
+    ]
+  },
+  "holdout_refit_auc": {
+    "C": 0.7783933518005539,
+    "C+A+R": 0.7839335180055402
+  },
+  "pca": {
+    "n_components": 2,
+    "n_radiomics_after_corr": 295,
+    "explained_variance_ratio": [
+      0.14347747748316625,
+      0.08413929494955993
+    ],
+    "component_summary": [
+      {
+        "component": 1,
+        "coef": -0.06303525949963423,
+        "odds_ratio": 0.9389103675957217,
+        "explained_var_ratio": 0.14347747748316625,
+        "abs_coef": 0.06303525949963423,
+        "familias_dominantes": "cinetica/realce (1.53)"
+      },
+      {
+        "component": 2,
+        "coef": 0.05050805605951538,
+        "odds_ratio": 1.0518053367272635,
+        "explained_var_ratio": 0.08413929494955993,
+        "abs_coef": 0.05050805605951538,
+        "familias_dominantes": "cinetica/realce (1.29); otras (0.11)"
+      }
+    ]
+  },
+  "coef_C_top": [
+    {
+      "feature": "HER2_bin",
+      "block": "C",
+      "coef": 0.758215368797413,
+      "odds_ratio": 2.13446358911634
+    },
+    {
+      "feature": "PR_bin",
+      "block": "C",
+      "coef": -0.5350853632391107,
+      "odds_ratio": 0.5856192976509303
+    },
+    {
+      "feature": "ER_bin",
+      "block": "C",
+      "coef": -0.3931241074775529,
+      "odds_ratio": 0.6749449766694007
+    },
+    {
+      "feature": "tumor_side_R",
+      "block": "C",
+      "coef": -0.34330055793693126,
+      "odds_ratio": 0.7094249562127736
+    },
+    {
+      "feature": "grade_mitotic",
+      "block": "C",
+      "coef": 0.25246946341047816,
+      "odds_ratio": 1.2872001888508433
+    },
+    {
+      "feature": "race_2.0",
+      "block": "C",
+      "coef": -0.24548459736723596,
+      "odds_ratio": 0.7823253335715258
+    },
+    {
+      "feature": "grade_nuclear",
+      "block": "C",
+      "coef": 0.21870072765640655,
+      "odds_ratio": 1.244458788854412
+    },
+    {
+      "feature": "grade_tubule",
+      "block": "C",
+      "coef": 0.1733471104809422,
+      "odds_ratio": 1.1892788445985054
+    },
+    {
+      "feature": "age",
+      "block": "C",
+      "coef": -0.16292732388857506,
+      "odds_ratio": 0.8496529356422121
+    },
+    {
+      "feature": "race_6.0",
+      "block": "C",
+      "coef": 0.1567102099998746,
+      "odds_ratio": 1.169656609994158
+    },
+    {
+      "feature": "bilateral_bc_0.0",
+      "block": "C",
+      "coef": 0.12337912269492372,
+      "odds_ratio": 1.1313132461803588
+    },
+    {
+      "feature": "stage_N",
+      "block": "C",
+      "coef": -0.11718947839476047,
+      "odds_ratio": 0.889416651956971
+    }
+  ],
+  "coef_CAR": [
+    {
+      "feature": "age",
+      "block": "C",
+      "coef": -0.1909785624560177,
+      "odds_ratio": 0.8261502985947211
+    },
+    {
+      "feature": "days_to_mri",
+      "block": "A",
+      "coef": 0.1335438303550823,
+      "odds_ratio": 1.1428713574947527
+    },
+    {
+      "feature": "tr",
+      "block": "A",
+      "coef": -0.0016756668378729743,
+      "odds_ratio": 0.9983257363079584
+    },
+    {
+      "feature": "te",
+      "block": "A",
+      "coef": 0.17153760276041954,
+      "odds_ratio": 1.1871287812121647
+    },
+    {
+      "feature": "ER_bin",
+      "block": "C",
+      "coef": -0.42874444440637555,
+      "odds_ratio": 0.651326358008282
+    },
+    {
+      "feature": "PR_bin",
+      "block": "C",
+      "coef": -0.5598133069732255,
+      "odds_ratio": 0.5713157145530274
+    },
+    {
+      "feature": "HER2_bin",
+      "block": "C",
+      "coef": 0.7619589923475021,
+      "odds_ratio": 2.1424691929091217
+    },
+    {
+      "feature": "menopause_post",
+      "block": "C",
+      "coef": -0.03450037815301254,
+      "odds_ratio": 0.9660879743573446
+    },
+    {
+      "feature": "tumor_side_R",
+      "block": "C",
+      "coef": -0.3542716114019429,
+      "odds_ratio": 0.7016843559988027
+    },
+    {
+      "feature": "patient_position",
+      "block": "A",
+      "coef": 0.01673899881948073,
+      "odds_ratio": 1.016879880837132
+    },
+    {
+      "feature": "stage_T",
+      "block": "C",
+      "coef": 0.04612413016081065,
+      "odds_ratio": 1.0472043925391004
+    },
+    {
+      "feature": "stage_N",
+      "block": "C",
+      "coef": -0.11285483262622545,
+      "odds_ratio": 0.8932803258631199
+    },
+    {
+      "feature": "grade_tubule",
+      "block": "C",
+      "coef": 0.17134754075573722,
+      "odds_ratio": 1.1869031745764953
+    },
+    {
+      "feature": "grade_nuclear",
+      "block": "C",
+      "coef": 0.21269399524021407,
+      "odds_ratio": 1.2370060635784021
+    },
+    {
+      "feature": "grade_mitotic",
+      "block": "C",
+      "coef": 0.2784913241076447,
+      "odds_ratio": 1.321135143319976
+    },
+    {
+      "feature": "field_strength",
+      "block": "A",
+      "coef": -0.03516995083832985,
+      "odds_ratio": 0.9654413247517171
+    },
+    {
+      "feature": "slice_thickness",
+      "block": "A",
+      "coef": 0.09306885226671684,
+      "odds_ratio": 1.0975373005975824
+    },
+    {
+      "feature": "matrix_rows",
+      "block": "A",
+      "coef": -0.0005177592312383538,
+      "odds_ratio": 0.9994823747829424
+    },
+    {
+      "feature": "flip_angle",
+      "block": "A",
+      "coef": -0.048483971517847974,
+      "odds_ratio": 0.9526726090793702
+    },
+    {
+      "feature": "fov",
+      "block": "A",
+      "coef": -0.3546154696431042,
+      "odds_ratio": 0.7014431175285936
+    },
+    {
+      "feature": "race_1.0",
+      "block": "C",
+      "coef": -0.03298501500496485,
+      "odds_ratio": 0.9675530582581747
+    },
+    {
+      "feature": "race_2.0",
+      "block": "C",
+      "coef": -0.18532822063241328,
+      "odds_ratio": 0.8308315430405077
+    },
+    {
+      "feature": "race_3.0",
+      "block": "C",
+      "coef": -0.0035369772928625985,
+      "odds_ratio": 0.9964692704431185
+    },
+    {
+      "feature": "race_4.0",
+      "block": "C",
+      "coef": -0.05932411257875154,
+      "odds_ratio": 0.9424012755449772
+    },
+    {
+      "feature": "race_5.0",
+      "block": "C",
+      "coef": 0.05839731779439765,
+      "odds_ratio": 1.0601361229902142
+    },
+    {
+      "feature": "race_6.0",
+      "block": "C",
+      "coef": 0.16015886470798935,
+      "odds_ratio": 1.173697315262968
+    },
+    {
+      "feature": "race_7.0",
+      "block": "C",
+      "coef": 0.06257758304842637,
+      "odds_ratio": 1.064577048846763
+    },
+    {
+      "feature": "histologic_type_-99.0",
+      "block": "C",
+      "coef": 0.009401579631028844,
+      "odds_ratio": 1.0094459133074185
+    },
+    {
+      "feature": "histologic_type_1.0",
+      "block": "C",
+      "coef": 0.06271725656660343,
+      "odds_ratio": 1.0647257524532823
+    },
+    {
+      "feature": "histologic_type_2.0",
+      "block": "C",
+      "coef": -0.0721593961558113,
+      "odds_ratio": 0.9303825845839836
+    },
+    {
+      "feature": "bilateral_bc_-99.0",
+      "block": "C",
+      "coef": -0.05616005208022602,
+      "odds_ratio": 0.945387812494897
+    },
+    {
+      "feature": "bilateral_bc_0.0",
+      "block": "C",
+      "coef": 0.1183513196787289,
+      "odds_ratio": 1.12563950121709
+    },
+    {
+      "feature": "bilateral_bc_1.0",
+      "block": "C",
+      "coef": -0.06223182755668185,
+      "odds_ratio": 0.9396650212924659
+    },
+    {
+      "feature": "manufacturer_0.0",
+      "block": "A",
+      "coef": 0.0622166023400767,
+      "odds_ratio": 1.0641928264221914
+    },
+    {
+      "feature": "manufacturer_2.0",
+      "block": "A",
+      "coef": -0.062257162298255564,
+      "odds_ratio": 0.9396412154235446
+    },
+    {
+      "feature": "model_name_0.0",
+      "block": "A",
+      "coef": -0.06665715447422507,
+      "odds_ratio": 0.9355158837964132
+    },
+    {
+      "feature": "model_name_1.0",
+      "block": "A",
+      "coef": 0.05776077156357249,
+      "odds_ratio": 1.0594615120702613
+    },
+    {
+      "feature": "model_name_2.0",
+      "block": "A",
+      "coef": 0.09448890487905898,
+      "odds_ratio": 1.0990969684515486
+    },
+    {
+      "feature": "model_name_3.0",
+      "block": "A",
+      "coef": -0.056147565506899026,
+      "odds_ratio": 0.9453996172228404
+    },
+    {
+      "feature": "model_name_4.0",
+      "block": "A",
+      "coef": -0.033885508595655714,
+      "odds_ratio": 0.9666821751017594
+    },
+    {
+      "feature": "model_name_5.0",
+      "block": "A",
+      "coef": -0.028505218340929426,
+      "odds_ratio": 0.9718972224418486
+    },
+    {
+      "feature": "model_name_7.0",
+      "block": "A",
+      "coef": 0.032905210516898896,
+      "odds_ratio": 1.033452574163035
+    },
+    {
+      "feature": "scan_options_1.0",
+      "block": "A",
+      "coef": 0.02387526296791677,
+      "odds_ratio": 1.024162558924679
+    },
+    {
+      "feature": "scan_options_2.0",
+      "block": "A",
+      "coef": -0.056147565506899026,
+      "odds_ratio": 0.9453996172228404
+    },
+    {
+      "feature": "scan_options_5.0",
+      "block": "A",
+      "coef": -0.16085225588675486,
+      "odds_ratio": 0.8514178537909062
+    },
+    {
+      "feature": "scan_options_6.0",
+      "block": "A",
+      "coef": 0.11226409450933497,
+      "odds_ratio": 1.1188082927594447
+    },
+    {
+      "feature": "scan_options_7.0",
+      "block": "A",
+      "coef": 0.09448890487905898,
+      "odds_ratio": 1.0990969684515486
+    },
+    {
+      "feature": "scan_options_8.0",
+      "block": "A",
+      "coef": -0.013669000920835775,
+      "odds_ratio": 0.9864239956665555
+    },
+    {
+      "feature": "acq_matrix_0.0",
+      "block": "A",
+      "coef": 0.06255110332439012,
+      "odds_ratio": 1.0645488595135189
+    },
+    {
+      "feature": "acq_matrix_1.0",
+      "block": "A",
+      "coef": 0.026305371159975287,
+      "odds_ratio": 1.0266544112582188
+    },
+    {
+      "feature": "acq_matrix_2.0",
+      "block": "A",
+      "coef": 0.010864377374808984,
+      "odds_ratio": 1.0109236090333646
+    },
+    {
+      "feature": "acq_matrix_3.0",
+      "block": "A",
+      "coef": 0.05776077156357249,
+      "odds_ratio": 1.0594615120702613
+    },
+    {
+      "feature": "acq_matrix_5.0",
+      "block": "A",
+      "coef": -0.032713917758280066,
+      "odds_ratio": 0.9678153947860385
+    },
+    {
+      "feature": "acq_matrix_7.0",
+      "block": "A",
+      "coef": -0.028505218340929426,
+      "odds_ratio": 0.9718972224418486
+    },
+    {
+      "feature": "acq_matrix_9.0",
+      "block": "A",
+      "coef": -0.09630304728171624,
+      "odds_ratio": 0.9081887502294883
+    },
+    {
+      "feature": "contrast_agent_1.0",
+      "block": "A",
+      "coef": 0.06166376059675928,
+      "odds_ratio": 1.0636046588015928
+    },
+    {
+      "feature": "contrast_agent_2.0",
+      "block": "A",
+      "coef": 0.09448890487905898,
+      "odds_ratio": 1.0990969684515486
+    },
+    {
+      "feature": "contrast_agent_3.0",
+      "block": "A",
+      "coef": 0.03350248749107403,
+      "odds_ratio": 1.0340700159630138
+    },
+    {
+      "feature": "contrast_agent_4.0",
+      "block": "A",
+      "coef": -0.10970765437652852,
+      "odds_ratio": 0.8960960667707331
+    },
+    {
+      "feature": "contrast_agent_5.0",
+      "block": "A",
+      "coef": -0.07998805854854273,
+      "odds_ratio": 0.9231273698014932
+    },
+    {
+      "feature": "PCA_R_1",
+      "block": "R (PCA)",
+      "coef": -0.06303525949963423,
+      "odds_ratio": 0.9389103675957217
+    },
+    {
+      "feature": "PCA_R_2",
+      "block": "R (PCA)",
+      "coef": 0.05050805605951538,
+      "odds_ratio": 1.0518053367272635
+    }
+  ]
+}

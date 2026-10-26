@@ -1,0 +1,5 @@
+Algoritmo,Modelo,ROC-AUC,AP,Diferencia de ROC-AUC,Diferencia de AP
+Random Forest,C,"0,726","0,522",—,—
+,C+A+R,"0,701","0,543","−0,026","+0,021"
+Gradient Boosting,C,"0,714","0,512",—,—
+,C+A+R,"0,748","0,558","+0,034","+0,046"

@@ -1,0 +1,34 @@
+Bloque,Variable,Nombre en el análisis,Columna de Duke,Tipo,Tratamiento
+C,Edad (años; derivada de Date of Birth),age,Date of Birth (Days),Continua,Imputación por mediana; estandarización
+,Receptor de estrógeno,ER_bin,ER status,Binaria,Imputación por moda
+,Receptor de progesterona,PR_bin,PR status,Binaria,Imputación por moda
+,HER2,HER2_bin,HER2 status,Binaria,Imputación por moda
+,Posmenopausia,menopause_post,Menopause (at diagnosis),Binaria,Imputación por moda
+,Lateralidad derecha,tumor_side_R,Tumor Location (y Position),Binaria,Reconstruida con Position cuando faltaba
+,Estadio T,stage_T,Staging(Tumor Size)# [T],Ordinal,Imputación por mediana; estandarización
+,Estadio N,stage_N,Staging(Nodes)#(Nx replaced by -1)[N],Ordinal,Imputación por mediana; estandarización
+,Grado: formación tubular,grade_tubule,Tumor Grade (Tubule),Ordinal,Imputación por mediana; estandarización
+,Grado: pleomorfismo nuclear,grade_nuclear,Tumor Grade (Nuclear),Ordinal,Imputación por mediana; estandarización
+,Grado: recuento mitótico,grade_mitotic,Tumor Grade (Mitotic),Ordinal,Imputación por mediana; estandarización
+,Raza/etnia,race,Race and Ethnicity,Nominal,Imputación por moda; codificación one-hot
+,Tipo histológico,histologic_type,Histologic type,Nominal,Categoría explícita NC (dato no recolectado); codificación one-hot
+,Cáncer bilateral,bilateral_bc,Bilateral breast cancer,Nominal,Categoría explícita NC (dato no recolectado); codificación one-hot
+M,Multifocal o multicéntrico,mf_multicentric,Multicentric/Multifocal,Binaria,Imputación por moda
+,Compromiso contralateral,mf_contralateral,Contralateral Breast Involvement,Binaria,Imputación por moda
+,Linfadenopatías o ganglios sospechosos,mf_lymphadenopathy,Lymphadenopathy or Suspicious Nodes,Binaria,Imputación por moda
+,Compromiso de piel o pezón,mf_skin_nipple,Skin/Nipple Invovlement,Binaria,Imputación por moda
+,Compromiso pectoral o de la pared torácica,mf_pec_chest,Pec/Chest Involvement,Binaria,Imputación por moda
+A,Días entre el diagnóstico y la RM,days_to_mri,Days to MRI (From the Date of Diagnosis),Continua,Imputación por mediana; estandarización
+,Tiempo de repetición,tr,TR (Repetition Time),Continua,Imputación por mediana; estandarización
+,Tiempo de eco,te,TE (Echo Time),Continua,Imputación por mediana; estandarización
+,Posición de la paciente,patient_position,Patient Position During MRI,Binaria,Imputación por moda
+,Intensidad de campo (T),field_strength,Field Strength (Tesla),Ordinal,Imputación por mediana; estandarización
+,Espesor de corte,slice_thickness,Slice Thickness,Ordinal,Imputación por mediana; estandarización
+,Filas de la matriz,matrix_rows,Rows,Ordinal,Imputación por mediana; estandarización
+,Ángulo de inclinación,flip_angle,Flip Angle,Ordinal,Imputación por mediana; estandarización
+,Campo de visión (cm),fov,FOV Computed (Field of View) in cm,Ordinal,Imputación por mediana; estandarización
+,Fabricante,manufacturer,Manufacturer,Nominal,Imputación por moda; codificación one-hot
+,Modelo del equipo,model_name,Manufacturer Model Name,Nominal,Imputación por moda; codificación one-hot
+,Opciones de adquisición,scan_options,Scan Options,Nominal,Imputación por moda; codificación one-hot
+,Matriz de adquisición,acq_matrix,Acquisition Matrix,Nominal,Imputación por moda; codificación one-hot
+,Agente de contraste,contrast_agent,Contrast Agent,Nominal,Imputación por moda; codificación one-hot

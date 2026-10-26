@@ -1,0 +1,7 @@
+Software,Versión,Uso
+Python,3.11.2,Lenguaje de programación
+scikit-learn,1.5.1,"Preprocesamiento, PCA, modelos, validación y métricas"
+pandas,2.2.3,Organización y manipulación de los datos
+NumPy,1.26.4,Operaciones numéricas
+SciPy,1.14.1,Procedimientos estadísticos complementarios
+Matplotlib,3.9.2,Figuras
